@@ -102,8 +102,9 @@ const Header = () => {
                                     </MenuItem>
                                 ))} */}
                                 <MenuItem onClick={handleCloseNavMenu}>
-                                    <Typography textAlign="center"> <Link to="/" >Home</Link></Typography>
+                                    <Typography href="homes" textAlign="center"> <Link to="/"  >Home</Link></Typography>
                                 </MenuItem>
+                                
                                 <MenuItem onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center"> <Link to="/about" >About</Link></Typography>
                                 </MenuItem>
