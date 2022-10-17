@@ -154,3 +154,17 @@ background: black !important;
                     </Grid>
                 </Grid>
             </Box>
+
+
+
+            <Box>
+            <Grid container>
+            <Grid md={6} xs={12}>
+
+            </Grid>
+             <Grid md={6} xs={12}>
+
+            </Grid>
+            </Grid>
+
+            </Box>
