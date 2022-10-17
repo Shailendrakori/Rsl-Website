@@ -2,6 +2,10 @@
     background: linear-gradient(to right, #ffffff 0%, #ab6b5542 100%);
 box-shadow: 10px 0px 23px 0px #0202053c;
 }
+.afterfooter{
+    background-color: rgba(1, 1, 25, 0.119);
+    height: 50px;
+}
 .afooter {
     
     padding: 10px;
