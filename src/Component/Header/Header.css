@@ -1,55 +1,45 @@
- 
- 
-.navbar-bg{
-/* background: transparent !important; */
-/* background: linear-gradient(to left, #fe6505 0%, #ccccff 87%); */
-/* background: linear-gradient(to right, #d8ccff 0%, #0808f617  100%);
- */
- /* background: #0808f617 !important; */
- /* background: transparent !important; */
- background: linear-gradient(to right, #ffffff 0%, #ab6b5542 100%);
+.navbar-bg {
+  position: fixed !important;
+  background: linear-gradient(to right, #ffffff 0%, #EADAD4 100%) !important;
+  /* background: linear-gradient(to right, #ffffff 0%, #0786C9 100%) !important; */
+
+  background-position: fixed !important;
 }
- 
- .a {
-    display: block;
-    padding: 15px;
-    text-decoration: none;
-    color: #020205;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0 5px;
-  }
 
+.a {
+  display: block;
+  padding: 9px;
+  text-decoration: none;
+  color: #27272A;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
 
- .a:after,
- .a:after {
+.a:after,
+.a:after {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   width: 0%;
-  
-  color: transparent;
+
+  /* color: transparent; */
   background: rgb(13, 8, 8) !important;
   height: 1px;
 }
 
+/* s  */
 
- /* s  */
-
- 
- .a:hover {
+.a:hover {
   color: rgb(250, 246, 246);
   z-index: 1;
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    transition: all 0.5s;
+  transition: all 0.5s;
+  box-shadow: 0px 3px 0px 0px rgb(58, 42, 113);
 
-  background-color: #030305!important;
+  background-color: #030305 !important;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
-
-
 }
-
-  

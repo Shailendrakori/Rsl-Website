@@ -1,8 +1,10 @@
 import { Box, CssBaseline } from "@mui/material";
 import React from "react";
+import Card from "@mui/material/Card";
+
 import { Grid, Typography } from "@mui/material";
 import "../Footer/Footer.css";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-scroll";
 import List from "@mui/material/List";
 import ListItemText from "@mui/material/ListItemText";
 import ListItemIcon from "@mui/material/ListItemIcon";
@@ -23,6 +25,7 @@ const Footer = () => {
   return (
     <>
       <CssBaseline />
+      <Box className="allfooter">
       <Box>
         <Box className="footer">
           <Grid container>
@@ -50,39 +53,35 @@ const Footer = () => {
                 <Typography variant="h5" sx={{ fontWeight: "bold " }}>
                   Usefull Links
                 </Typography>
-                <List component="nav" aria-label="secondary mailbox folder">
-                  <ListItemText>
-                    <Link className="afooter" to="/">
+                <List component="nav"  aria-label="primary mailbox folder">
+                  <ListItemText sx={{color:"white"}}>
+                    <Link sx={{color:"white"}} className="afooter" to="home">
                       Home
                     </Link>
                   </ListItemText>
-                  <ListItemText>
-                    <Link className="afooter" to="/about">
+                  <ListItemText sx={{color:"white"}}>
+                    <Link sx={{color:"white"}} className="afooter" to="about">
                       About us
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/services">
+                    <Link className="afooter" to="services">
                       Services
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/portfolio">
+                    <Link className="afooter" to="portfolio">
                       Portfolio
                     </Link>
                   </ListItemText>
-                  <ListItemText>
-                    <Link className="afooter" to="/portfolio">
-                      Portfolio
-                    </Link>
-                  </ListItemText>
+                 
                   <ListItemText>
                     <Link className="afooter" to="/">
                       Terms of uses
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/contact">
+                    <Link className="afooter" to="contact">
                       Contact
                     </Link>
                   </ListItemText>
@@ -149,17 +148,20 @@ const Footer = () => {
         </Box>
       </Box>
 
-      <Box className="afterfooter">
+      <Box>
+        <Box  className="afterfooter">
         <Grid container>
-          <Grid md={6} xs={12} >
+          <Grid md={6} sx={{textAlign:"center",pt:"10px"}} xs={12} >
             <Typography variant="text">
               © Copyright RSL Soft Tech Pvt.Ltd.. All Rights Reserved
             </Typography>
           </Grid>
-          <Grid md={6} xs={12}>
+          <Grid md={6} sx={{textAlign:"center",pt:"10px"}} xs={12}>
             Designed by RSL Soft Tech Pvt.Ltd.
           </Grid>
         </Grid>
+        </Box>
+      </Box>
       </Box>
     </>
   );
