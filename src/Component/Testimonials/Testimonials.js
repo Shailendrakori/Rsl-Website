@@ -1,51 +1,147 @@
 import React from "react";
 import { Grid, Typography } from "@mui/material";
 import { Box, CssBaseline } from "@mui/material";
+import hr from "../img/hr.jpeg";
+import lokeshsir from "../img/lokeshsir.png";
 
 import "../Testimonials/Testimonials.css";
 
 const Testimonials = () => {
   return (
     <>
-      <Box className="testimonial_slider_2">
-        <input type="radio" name="slider_2" id="slide_2_1" defaultChecked />
-        <input type="radio" name="slider_2" id="slide_2_2" />
-        {/* <input type="radio" name="slider_2" id="slide_2_3" />
+      <Box>
+        <Grid  container>
+          <Grid className="testimonial-center" md={12} sx={{ p: "10%" }} xs={12}>
+            <Box className="testimonial_slider_2 testi">
+              <Box className="testi2">
+                <input
+                  type="radio"
+                  name="slider_2"
+                  id="slide_2_1"
+                  defaultChecked
+                />
+                <input type="radio" name="slider_2" id="slide_2_2" />
+                {/* <input type="radio" name="slider_2" id="slide_2_3" />
         <input type="radio" name="slider_2" id="slide_2_4" /> */}
-        <Box className="boo_inner clearfix">
-          <Box className="slide_content">
-            <Box className="testimonial_2">
-              <Box className="image-md"></Box>
-              <Box className="author_2">
-                <h3>Lokesh Panchal</h3>
-              </Box>
-              <Box className="content_2">
-                <p>
-                  “Your work is going to fill a large part of your life, and the
-                  only way to be truly satisfied is to do what you believe is
-                  great work. And the only way to do great work is to love what
-                  you do.”
-                </p>
-              </Box>
-            </Box>
-          </Box>
-          <Box className="slide_content">
-            <Box className="testimonial_2">
-              <Box className="image-hr"></Box>
-              <Box className="author_2">
-                <h3>Sweta Panchal</h3>
-              </Box>
-              <Box className="content_2">
-                <p>
-                  “You don’t need to be a genius or a visionary, or even a
-                  college graduate for that matter, to be successful. You just
-                  need framework and a dream.”
-                </p>
-              </Box>
-            </Box>
-          </Box>
+                <Box className="boo_inner clearfix">
+                  <Box className="slide_content">
+                    <Box className="testimonial_2">
+                      <Grid container>
+                        <Grid md={4}></Grid>
+                        <Grid
+                          sx={{ textAlign: "center", justifyContent: "center" }}
+                          md={4}
+                          xs={12}
+                        >
+                          <Box
+                            sx={{
+                              textAlign: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <img
+                              className="testi-profile"
+                              src={lokeshsir}
+                              height={150}
+                              width={200}
+                            />
+                          </Box>
+                        </Grid>
+                        <Grid md={4}></Grid>
+                      </Grid>
 
-          {/* <Box className="slide_content">
+                      <Box className="content_2 testimonial">
+                        <Grid container>
+                          
+                          <Grid md={12} xs={12}>
+                          {/* <Box sx={{textAlign:"start",}}>    <span style={{fontSize:"20px",mt:"5%"}}>“</span></Box> */}
+                      
+                          <Box>
+                          <Typography
+                              variant="text"
+                              className="para-testi testimonial"
+                            >
+                             
+                             “ Your work is going to fill a large part of your
+                                life, and the only way to be truly satisfied is
+                                to do what you believe is great work. And the
+                                only way to do great work is to love what you
+                                do. ” 
+                              
+                            </Typography>
+                          </Box>
+                          {/* <Box sx={{textAlign:"end"}}>   <span style={{fontSize:"20px",}}>”</span></Box> */}
+                     
+                          </Grid>
+                        </Grid>
+                      </Box>
+                      
+                      <Box className="author_2">
+                        <Typography variant="h3" className="heading-testi">
+                         -- Lokesh Panchal -- 
+                        </Typography>
+                        <span className="subheding" >Ceo & Founder</span>
+                      </Box>
+                    </Box>
+                  </Box>
+                  <Box className="slide_content">
+                    <Box className="testimonial_2">
+                      <Grid container>
+                        <Grid md={4}></Grid>
+                        <Grid
+                          sx={{ textAlign: "center", justifyContent: "center" }}
+                          xs={12}
+                          md={4}
+                        >
+                          <Box
+                            sx={{
+                              textAlign: "center",
+                              justifyContent: "center",
+                            }}
+                          >
+                            <img
+                              className="testi-profile"
+                              src={hr}
+                              height={150}
+                            />
+                          </Box>
+                        </Grid>
+                        <Grid md={4}></Grid>
+                      </Grid>
+                 
+                      <Box className="content_2">
+                        <Grid container>
+                         
+                          <Grid md={12} xs={12}>
+
+                            {/* <Box sx={{textAlign:"start"}}> <span style={{fontSize:"50px",}}>“</span></Box> */}
+                         
+                          <Box>
+                            <Typography
+                              variant="text"
+                              className="para-testi testimonial"
+                            >
+                                                  
+                              “ You don’t need to be a genius or a visionary,
+                                or even a college graduate for that matter, to
+                                be successful. You just need framework and a
+                                dream. ”
+                             
+                            </Typography>
+                            </Box>
+                          {/* <Box sx={{textAlign:"end"}}>     <span style={{fontSize:"50px",}}>”</span></Box> */}
+                     
+                          </Grid>
+                        </Grid>
+                      </Box>
+                      <Box className="author_2">
+                        <Typography variant="h3"  className="heading-testi">-- Sweta Panchal --  </Typography>
+                        <span className="subheding"  >HR</span>
+                      </Box>
+                    </Box>
+                  </Box>
+
+                  {/* <Box className="slide_content">
             <Box className="testimonial_2">
               <Box className="content_2">
                 <p>
@@ -86,13 +182,17 @@ const Testimonials = () => {
               </Box>
             </Box>
           </Box> */}
-        </Box>
-        <Box id="controls">
-          <label htmlFor="slide_2_1" />
-          <label htmlFor="slide_2_2" />
-          {/* <label htmlFor="slide_2_3" />
+                </Box>
+                <Box id="controls">
+                  <label htmlFor="slide_2_1" />
+                  <label htmlFor="slide_2_2" />
+                  {/* <label htmlFor="slide_2_3" />
           <label htmlFor="slide_2_4" /> */}
-        </Box>
+                </Box>
+              </Box>
+            </Box>
+          </Grid>
+        </Grid>
       </Box>
     </>
   );

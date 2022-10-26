@@ -9,11 +9,11 @@ import fluent from "../img/fluent8-logo-purple.png";
 import ice1 from "../img/ice1.png";
 import autism from "../img/autism.jpg";
 import ih1 from "../img/ih1.png";
-
+import "../Portfolio/Portfolio.css"
 const Portfolio = () => {
   return (
     <>
-      <Box id="portfolio" sx={{mt:"10%", mb: "4%" }}>
+      <Box id="portfolio" sx={{mt:"10%",  }}>
         <Grid container>
           <Grid md={12} sx={{ marginTop: "1%" }} xs={12}>
             <Typography
@@ -37,14 +37,14 @@ const Portfolio = () => {
 
         <Grid
           container
-          sx={{ marginLeft: "5%", marginBottom: "10%", width: "90%" }}
+          sx={{ marginLeft: "5%",  width: "90%" }}
         >
           <Grid md={4} xs={12}>
             <Box className="card-port">
               <Box className="slide slide1">
                 <Box className="content">
-                  <Box className="icon-port">
-                    <img src={cuffing} height={200} width={200} />
+                  <Box sx={{textAlign:"center"}}className="icon-port">
+                    <img src={cuffing}   height={200} width={200} />
                   </Box>
                 </Box>
               </Box>
@@ -115,7 +115,7 @@ const Portfolio = () => {
               <Box className="slide slide1">
                 <Box className="content">
                   <Box className="icon-port">
-                    <img src={ih1} height={150} width={300} />
+                    <img src={ih1} className="img-size3" height={150} width={300} />
                   </Box>
                 </Box>
               </Box>
@@ -152,7 +152,7 @@ const Portfolio = () => {
               <Box className="slide slide1">
                 <Box className="content">
                   <Box className="icon-port">
-                    <img src={ice1} height={200} width={300} />
+                    <img src={ice1} height={200} className="img-size3"  width={300} />
                   </Box>
                 </Box>
               </Box>
@@ -187,8 +187,8 @@ const Portfolio = () => {
             <Box className="card-port">
               <Box className="slide slide1">
                 <Box className="content">
-                  <Box className="icon-port">
-                    <img src={fluent} height={160} width={280} />
+                  <Box  className="icon-port">
+                    <img src={fluent} className="img-size3"  />
                   </Box>
                 </Box>
               </Box>
@@ -197,7 +197,7 @@ const Portfolio = () => {
                 <Grid container>
                     <Grid md={8} xs={8}>
                       <Typography className="title-port" variant="h5">
-                      Island Traveller
+                      Fluent8
                       </Typography>
                       <Typography className="para-port" variant="text">
                         ANDROID AND IOS
@@ -214,12 +214,7 @@ const Portfolio = () => {
                       </ListItem>
                     </Grid>
                   </Grid>
-                  <Typography className="title-port" variant="h5">
-                    Island Traveller
-                  </Typography>
-                  <Typography className="para-port" variant="text">
-                    ANDROID AND IOS
-                  </Typography>
+                
                 </Box>
               </Box>
             </Box>
@@ -229,18 +224,33 @@ const Portfolio = () => {
               <Box className="slide slide1">
                 <Box className="content">
                   <Box className="icon-port">
-                    <img src={autism} height={200} width={300} />
+                    <img src={autism}  className="img-size3"  height={200} width={300} />
                   </Box>
                 </Box>
               </Box>
               <Box className="slide slide2">
                 <Box className="content">
-                  <Typography className="title-port" variant="h5">
+                <Grid container>
+                    <Grid md={8} xs={8}>
+                    <Typography className="title-port" variant="h5">
                     Autism Therapy
                   </Typography>
                   <Typography className="para-port" variant="text">
                     ANDROID AND IOS
                   </Typography>
+                    </Grid>
+                    <Grid md={4} xs={4}>
+                      <ListItem>
+                        <ListItemText sx={{ mr: "40px" }}>
+                          <AddIcon className="port-icon-o" />
+                        </ListItemText>
+                        <ListItemText>
+                          <LinkIcon className="port-icon-o" />
+                        </ListItemText>
+                      </ListItem>
+                    </Grid>
+                  </Grid>
+                  {/* */}
                 </Box>
               </Box>
             </Box>

@@ -1,4 +1,4 @@
-import { Box, CssBaseline } from "@mui/material";
+import { Box, Button, CssBaseline } from "@mui/material";
 import React from "react";
 import Card from "@mui/material/Card";
 
@@ -16,6 +16,22 @@ import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 // import BottomNavigation from '@mui/material/BottomNavigation';
 // or
 import { BottomNavigation } from "@mui/material";
+
+
+
+
+
+const headings ={
+  color: "black", 
+  fontWeight: "bold",
+  fontSize:"20px"
+  
+}
+
+const paraAddress ={
+  color: "#3C2317",
+  fontWeight: "200",
+}
 const Footer = () => {
   const [selectedIndex, setSelectedIndex] = React.useState(1);
 
@@ -29,35 +45,49 @@ const Footer = () => {
       <Box>
         <Box className="footer">
           <Grid container>
-            <Grid md={3} xs={12} sx={{ p: "3%" }}>
+            <Grid  md={3} xs={12} sx={{ p: "3%", }}>
               <Typography
                 variant="h5"
-                sx={{ color: "black", fontWeight: "bold" }}
+                sx={headings}
               >
                 RSL Soft Tech Pvt.Ltd.
               </Typography>
-              <Typography variant="text" sx={{ color: "black" }}>
-                114,115 Milinda Manor RNT Marg Indore (MP), India
-              </Typography>{" "}
-              <br />
-              <Typography variant="text" sx={{ color: "black" }}>
-                Phone: +918839087102
-              </Typography>
-              <br />
-              <Typography variant="text" sx={{ color: "black" }}>
-                Phone: +918878086055
-              </Typography>
+          
+
+              <List component="nav"   aria-label="primary mailbox folder">
+                  <ListItemText sx={{color:"black"}}>
+                  
+                   114,115 Milinda Manor RNT Marg Indore (MP), India
+               
+                    
+                  </ListItemText>
+                  <ListItemText sx={{color:"black"}}>
+                  
+                  Phone: +918839087102
+              
+                   
+                 </ListItemText>
+                 <ListItemText sx={{color:"black"}}>
+                  
+                 Phone: +918878086055
+              
+                   
+                 </ListItemText>
+                  </List>
+             
+              
             </Grid>
-            <Grid md={3} xs={12} sx={{ pt: "3%" }}>
-              <Box sx={{ width: "100%", maxWidth: 360 }}>
-                <Typography variant="h5" sx={{ fontWeight: "bold " }}>
+            <Grid md={3} className="address" xs={12} sx={{ pt: "3%",pl:"5px" }}>
+              <Box  sx={{ width: "100%", maxWidth: 360,textAlign:"start" }}>
+                <Typography variant="h5" sx={headings}>
                   Usefull Links
                 </Typography>
-                <List component="nav"  aria-label="primary mailbox folder">
+                <List component="nav"   aria-label="primary mailbox folder">
                   <ListItemText sx={{color:"white"}}>
-                    <Link sx={{color:"white"}} className="afooter" to="home">
+                   <Link sx={{color:"white"}} className="afooter" to="home">
                       Home
                     </Link>
+                    
                   </ListItemText>
                   <ListItemText sx={{color:"white"}}>
                     <Link sx={{color:"white"}} className="afooter" to="about">
@@ -88,29 +118,29 @@ const Footer = () => {
                 </List>
               </Box>
             </Grid>
-            <Grid md={3} xs={12} sx={{ pt: "3%" }}>
+            <Grid md={2} xs={12} sx={{ pt: "3%",pl:"5px" }}>
               <Box sx={{ width: "100%", maxWidth: 360 }}>
-                <Typography variant="h5" sx={{ fontWeight: "bold " }}>
+                <Typography variant="h5" sx={headings}>
                   Our Services
                 </Typography>
                 <List component="nav" aria-label="secondary mailbox folder">
                   <ListItemText>
-                    <Link className="afooter" to="/">
+                    <Link className="afooter"  to="services">
                       Android Development
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/services">
+                    <Link className="afooter"  to="services">
                       IOS Development
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/services">
+                    <Link className="afooter"  to="services">
                       Web Design
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/services">
+                    <Link className="afooter" to="services">
                       Web Development
                     </Link>
                   </ListItemText>
@@ -120,7 +150,7 @@ const Footer = () => {
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/services">
+                    <Link className="afooter"  to="services">
                       QA Solurion
                     </Link>
                   </ListItemText>
@@ -129,21 +159,37 @@ const Footer = () => {
               </Box>
             </Grid>
 
-            <Grid md={3} xs={12} sx={{ p: "3%" }}>
+            <Grid  md={4} xs={12} sx={{ p: "3%", }}>
               <Typography
-                variant="6"
-                sx={{ color: "black", fontWeight: "bold" }}
+                variant="h5"
+                sx={headings}
               >
-                Get in touch
+                 Get in touch
               </Typography>
-              <Typography variant="text" sx={{ color: "black" }}>
-                Email : contact@rslsofttech.com
-              </Typography>{" "}
-              <br />
-              <Typography variant="text" sx={{ color: "black" }}>
-                Email : hr@rslsofttech.com
-              </Typography>
+          
+
+              <List component="nav"   aria-label="primary mailbox folder">
+                  <ListItemText sx={{color:"black"}}>
+                  
+                  Email : contact@rslsofttech.com
+               
+                    
+                  </ListItemText>
+                  <ListItemText sx={{color:"black"}}>
+                  
+                  Email : hr@rslsofttech.com
+              
+                   
+                 </ListItemText>
+                 
+                 
+                 
+                  </List>
+             
+              
             </Grid>
+
+         
           </Grid>
         </Box>
       </Box>
@@ -152,7 +198,7 @@ const Footer = () => {
         <Box  className="afterfooter">
         <Grid container>
           <Grid md={6} sx={{textAlign:"center",pt:"10px"}} xs={12} >
-            <Typography variant="text">
+            <Typography variant="text"  sx={paraAddress}>
               © Copyright RSL Soft Tech Pvt.Ltd.. All Rights Reserved
             </Typography>
           </Grid>

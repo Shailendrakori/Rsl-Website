@@ -3,20 +3,20 @@ import Card from "@mui/material/Card";
 
 import { Grid, ListItem, ListItemText, Typography } from "@mui/material";
 import { Box } from "@mui/system";
-import about from "../img/about.jpg";
-import ImageIcon from "@mui/icons-material/Image";
 
+import ImageIcon from "@mui/icons-material/Image";
+import "../About/About.css"
 const About = () => {
   return (
     <>
-    
+    <Box id="about"sx={{ mt: "10%", mb: "4%" }}></Box>
       <Box id="about"sx={{ mt: "10%", mb: "4%" }}>
         <Grid  container>
           <Grid md={12} sx={{ marginTop: "1%" }} xs={12}>
             <Typography
               variant="h4"
               className="heading-all"
-              sx={{ color: "black", textAlign: "center" }}
+              sx={{  textAlign: "center" }}
             >
               Find Out More About Us
             </Typography>
@@ -31,17 +31,17 @@ const About = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container sx={{ mt: "5%" }}>
-          <Grid md={6} xs={12}>
+        <Grid container  sx={{ mt: "5%" }}>
+          <Grid md={6} xs={12}  className="about-img-content">
             <Card className="aboutbg" sx={{ textAlign: "center",p: "3%" }}>
-              {/* <img src={about} height={348} /> */}
+           
             </Card>
           </Grid>
           <Grid md={6} xs={12}>
             <Box sx={{ p: "3%" }}>
               <Typography
                 variant="h5"
-                sx={{ color: "black", fontWeight: "bold", margintop: "1%" }}
+                sx={{ color:" #4C0033", fontWeight: "bold", margintop: "1%" }}
               >
                 <Box>
                   Build a culture of open teamwork and Turn conversations into

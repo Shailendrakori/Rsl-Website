@@ -1,0 +1,20 @@
+#homes{
+    text-align: -webkit-center !important;
+}
+.icon-service{
+    font-size: 52px !important;
+    border-radius: 10px !important;
+    background-color: #eeeeee;
+    /* padding: 10px; */
+    padding: 10px 15px 10px 15px;
+    color: rgb(40 22 112);
+    box-shadow: 0px 2px 3px;
+}
+
+.textt {
+    color: rgba(0, 0, 0, 0.728) !important;
+    margin-bottom: 5% !important;
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+
+  }

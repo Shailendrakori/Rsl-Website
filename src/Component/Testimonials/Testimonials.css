@@ -8,21 +8,29 @@
 .testimonial_slider_2 input {
 	display: none;
 }
+.testi-profile{
+	box-shadow: 0 8px 28px 0px #bf6e5134;
+height:30%;
+width: 40%;
+	
 
-
-.image-md{
-    background-image: url("../img/md.jpeg");
-    background-size: 10% 120%;
-    background-repeat: no-repeat;
-
-    height: 40px;
 }
-.image-hr{
-    background-image: url("../img/hr.jpeg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    height: 40px;
+.testi{
+	box-shadow: 0 8px 28px 0px #bf6e5134;
+
+
+/* background: #F5F5F5; */
+background-color: #EDF4F6;
+	
 }
+
+.subheding{
+	color: black;
+	font-size: 12px;
+	font-weight: 100;
+}
+
+
 .testimonial_slider_2 #slide_2_1:checked ~ .boo_inner { margin-left:0; }
 .testimonial_slider_2 #slide_2_2:checked ~ .boo_inner { margin-left:-100%; }
 .testimonial_slider_2 #slide_2_3:checked ~ .boo_inner { margin-left:-200%; }
@@ -97,19 +105,27 @@
 .author_2 {
 	margin-left: 30px;
     text-align: center;
+	color: white;
 }
 .author_2 h3 {
-	color: #333; /* Change author text color */
+	color: rgb(255, 242, 242); /* Change author text color */
 	font-size: 13px;
 	font-weight: 600px;
 	padding: 0 0 5px;
-    text-align: ;
+    /* text-align: ""; */
 }
 .author_2 h4 {
-	color: #333; /* Change author text color */
+	color: rgb(255, 255, 255); /* Change author text color */
 	font-size: 12px;
 	font-weight: 400;
 	padding: 0 0 5px;
+}
+.para-testi{
+	color: rgb(0, 0, 0);
+	font-style: italic;
+	font-style: normal;
+    font-weight: bold;
+    text-align: -webkit-center;
 }
 .author_2 h4 a {
 	color: #999; /* Change company text link color */
@@ -140,3 +156,49 @@
 	border-color: #000;
 	width: 100%;
 }
+
+
+
+.heading-testi{
+	font-weight: 300 !important;
+	font-size: 20px !important;
+	color: black !important;
+	font-family: initial;
+    font-style: revert;
+}
+
+ blockquote {
+	margin: 10px 10px 0;
+	background: #efefef;
+	/* padding: 20px 60px; */
+	/* position: relative; */
+	border: none;
+	border-radius: 8px;
+	font-style: italic;
+  }
+  
+ blockquote:before,
+   blockquote:after {
+	content: "\201C";
+	position: absolute;
+	font-size: 80px;
+	line-height: 1;
+	color: #757f9a;
+	font-style: normal;
+  }
+  
+ blockquote:before {
+	top: 0;
+	left: 10px;
+  }
+  
+blockquote:after {
+	content: "\201D";
+	right: 10px;
+	bottom: -0.5em;
+  }
+  .testimonial-center{
+	text-align: -webkit-center;
+  }
+  
+ 
