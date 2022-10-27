@@ -3,7 +3,7 @@
     
     height: 100px;
     width: 214px;
-    margin-top: 47px;
+   margin: 41px 39px 0px 0px;
     border-radius: 2px;
 
 }
@@ -115,7 +115,6 @@
   
   .para-port {
   
-    
   
    
     font-size: 10px;
@@ -125,9 +124,9 @@
   
   }
   
-  .title-port {
+  .title-portt {
   
-    /* margin: 0 0 2px 0; */
+   
   
     padding: 0;
   

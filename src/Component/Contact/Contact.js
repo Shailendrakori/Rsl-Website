@@ -14,14 +14,6 @@ import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import TextareaAutosize from "@mui/material/TextareaAutosize";
 import "../Contact/Contact.css";
-// map
-import { Map, GoogleApiWrapper } from "google-maps-react";
-const mapStyles = {
-  width: "90px",
-  height: "96px",
-  // marginTop:"2%",
-  // position:"none"
-};
 
 const theme = createTheme();
 
@@ -37,7 +29,7 @@ const Contact = (props) => {
 
   return (
     <>
-      <Box id="contact" sx={{mb:"4%"}}>
+      <Box id="contact" sx={{ mb: "4%" }}>
         <Grid container>
           <Grid md={12} sx={{ marginTop: "1%" }} xs={12}>
             <Typography
@@ -62,32 +54,213 @@ const Contact = (props) => {
         </Grid>
       </Box>
 
+      <div className="container mb-5">
+        <div className="row card">
+      
+          <div className="col-md-12 col-xs-6">
+            <div className="row">
+              <div className="col-md-8 col-xs-12">
+                <div
+                  id="map-container-google-10"
+                  className="z-depth-1-half map-container-7"
+                  style={{ textAlign: "center" }}
+                >
+                 
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2644254629445!2d75.87022971418972!3d22.718411033329783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fdafbd9cfb87%3A0x850ef5f2eda7b441!2sRSL%20SOFT%20TECH%20Pvt.Ltd!5e0!3m2!1sen!2sin!4v1666768502013!5m2!1sen!2sin"
+                    // className="map"
+                    height={400}
+                    style={{ border: 0,width:"100%" }}
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
+                </div>
+                
+            <div className="row pt-4">
+              <div className="col-md-4  col-xs-12 address-contact ">
+                <div classname="card p-5  card-address">
+                  <i class="bi bi-geo-alt ico"></i>
+                  <h4 style={{ paddingTop: "4%" }}>Our Address</h4>
+                  <p>114,115 Milinda Manor RNT Marg Indore (MP), India</p>
+                </div>
+              </div>
+              <div className="col-md-4 col-xs-12 address-contact ">
+                <div classname="card p-3  card-address">
+                  <i class="bi bi-envelope ico"></i>
+                  <h4 style={{ paddingTop: "4%" }}>Email Us</h4>
+                  <p>contact@rslsofttech.com</p>
+                </div>
+              </div>
+              <div className="col-md-4 col-xs-12 address-contact ">
+                <div classname="card p-3 card-address ">
+                  <i class="bi bi-telephone-fill ico"></i>
+                  <h4 style={{ paddingTop: "4%" }}>Call Us</h4>
+                  <p>+918839087102</p>
+                </div>
+              </div>
+            </div>
+              </div>
+              <div
+                className="card col-md-4 col-xs-12"
+                style={{ textAlign: "center" }}
+              >
+                <div className=" p-5" >
+                  <form
+                    id="contact-form"
+                    method="post"
+                    action="contact.php"
+                    role="form"
+                  >
+                    <div className="messages" />
+                    <div className="controls">
+                      <div className="row">
+                        <div className="col-md-12">
+                          <div
+                            className="form-group  icon-right-form-contact"
+                           
+                          >
+                            <i class="fas fa-user prefix grey-text iconf-contact"></i>
+                            <input
+                              id="form_name"
+                              type="text"
+                              name="name"
+                              className="form-control input-form"
+                              placeholder="Your name"
+                              required="required"
+                              data-error="Fullname is required."
+                            />
+                            <div className="help-block with-errors" />
+                          </div>
+
+                          <div
+                            className="form-group  icon-right-form-contact"
+                           
+                          >
+                            <i class="fas fa-envelope prefix grey-text iconf-contact"></i>{" "}
+                            <input
+                              id="form_email"
+                              type="email"
+                              name="email"
+                              className="form-control input-form"
+                              placeholder="Your email"
+                              required="required"
+                              data-error="Valid email is required."
+                            />
+                            <div className="help-block with-errors" />
+                          </div>
+                          <div
+                           className="form-group  icon-right-form-contact"
+                           
+                          >
+                            <i class="bi bi-telephone-fill iconf-contact"></i>
+                            <input
+                              id="form_phone"
+                              type="number"
+                              name="phone"
+                              className="form-control input-form"
+                              placeholder="Your phone number"
+                            />
+                            <div className="help-block with-errors" />
+                          </div>
+                          <div
+                          className="form-group  icon-right-form-contact"
+                           
+                          >
+                            <i class="bi bi-file-earmark-person-fill iconf-contact"></i>{" "}
+                            <input
+                              id="form_lastname"
+                              type="file"
+                              name="surname"
+                              className="form-control input-form"
+                              required="required"
+                              data-error="Lastname is required."
+                            />
+                            <div className="help-block with-errors" />
+                          </div>
+                          <div
+                            className="form-group  icon-right-form-contact"
+                           
+                          >
+                            <i class="fas fa-pencil-alt prefix grey-text iconf-contact"></i>{" "}
+                            <textarea
+                              id="form_message"
+                              name="message"
+                              className="form-control input-form"
+                              placeholder="Message for me *"
+                              rows={4}
+                              required="required"
+                              data-error="Please,leave us a message."
+                              defaultValue={""}
+                            />
+                            <div className="help-block with-errors" />
+                          </div>
+                          <div
+                            className="col-md-12 mt-5"
+                            style={{ textAlign: "center" }}
+                          >
+                            <input
+                              type="submit"
+                              className="btn btn-light btn-send"
+                              defaultValue="Send message"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* <div className="row">
+          <div className="col-md-2 col-xs-12"></div>
+          <div className="col-md-9 col-xs-8 ">
+            <div className="row pt-4">
+              <div className="col-md-4  col-xs-12 address ">
+                <div classname="card p-5  card-address">
+                  <i class="bi bi-geo-alt ico"></i>
+                  <h4 style={{ paddingTop: "4%" }}>Our Address</h4>
+                  <p>114,115 Milinda Manor RNT Marg Indore (MP), India</p>
+                </div>
+              </div>
+              <div className="col-md-4 col-xs-12 address ">
+                <div classname="card p-3  card-address">
+                  <i class="bi bi-envelope ico"></i>
+                  <h4 style={{ paddingTop: "4%" }}>Email Us</h4>
+                  <p>contact@rslsofttech.com</p>
+                </div>
+              </div>
+              <div className="col-md-4 col-xs-12 address ">
+                <div classname="card p-3 card-address ">
+                  <i class="bi bi-telephone-fill ico"></i>
+                  <h4 style={{ paddingTop: "4%" }}>Call Us</h4>
+                  <p>+918839087102</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> */}
+      </div>
+
+      {/* 
       <div className="container ">
         <div className="row">
           <div className="col-md-8 col-xs-6 ">
             <div
-              // id="map-container-google-10"
-              // className="z-depth-1-half map-container-7"
-              style={{textAlign:"center"}}
+              id="map-container-google-10"
+              className="z-depth-1-half map-container-7"
             >
               <iframe
-                src="https://maps.google.com/maps?q=new%20delphi&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.2644254629445!2d75.87022971418972!3d22.718411033329783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fdafbd9cfb87%3A0x850ef5f2eda7b441!2sRSL%20SOFT%20TECH%20Pvt.Ltd!5e0!3m2!1sen!2sin!4v1666768502013!5m2!1sen!2sin"
                 frameBorder={0}
-                style={{ border: 0,height:"350px" ,widht:"100%" }}
+                style={{ border: 0, height: "350px" }}
                 className="map"
                 allowFullScreen
               />
             </div>
-            {/* <Map
-              google={props.google}
-             https://goo.gl/maps/thJf1ZvC9Ae4oH9HA
-          zoom={14}
-          style={mapStyles}
-              initialCenter={{
-                lat: 22.719052770109073,
-                lng: 75.87230379369404,
-              }}
-            /> */}
+
             <div className="row pt-4">
               <div className="col-md-4  col-xs-12 address ">
                 <div classname="card p-5  card-address">
@@ -117,10 +290,7 @@ const Contact = (props) => {
             className="col-md-4 col-xs-12  "
             style={{ marginTop: "2%", marginBottom: "2%" }}
           >
-            <div
-              className="card p-3"
-              
-            >
+            <div className="card p-3">
               <form
                 id="contact-form"
                 method="post"
@@ -136,8 +306,8 @@ const Contact = (props) => {
                           id="form_name"
                           type="text"
                           name="name"
-                          className="form-control"
-                          placeholder="Please enter your fullname *"
+                          className="form-control input-form"
+                          placeholder="Your name"
                           required="required"
                           data-error="Fullname is required."
                         />
@@ -149,8 +319,8 @@ const Contact = (props) => {
                           id="form_email"
                           type="email"
                           name="email"
-                          className="form-control"
-                          placeholder="Please enter your email *"
+                          className="form-control input-form"
+                          placeholder="Your email"
                           required="required"
                           data-error="Valid email is required."
                         />
@@ -161,29 +331,27 @@ const Contact = (props) => {
                           id="form_phone"
                           type="number"
                           name="phone"
-                          className="form-control"
-                          placeholder="Please enter your phone"
+                          className="form-control input-form"
+                          placeholder="Your phone number"
                         />
                         <div className="help-block with-errors" />
                       </div>
                       <div className="form-group mt-3">
-                       
-                       <input
-                         id="form_lastname"
-                         type="file"
-                         name="surname"
-                         className="form-control"
-                         placeholder="Please enter your lastname *"
-                         required="required"
-                         data-error="Lastname is required."
-                       />
-                       <div className="help-block with-errors" />
-                     </div>
-                        <div className="form-group mt-3">
+                        <input
+                          id="form_lastname"
+                          type="file"
+                          name="surname"
+                          className="form-control input-form"
+                          required="required"
+                          data-error="Lastname is required."
+                        />
+                        <div className="help-block with-errors" />
+                      </div>
+                      <div className="form-group mt-3">
                         <textarea
                           id="form_message"
                           name="message"
-                          className="form-control"
+                          className="form-control input-form"
                           placeholder="Message for me *"
                           rows={4}
                           required="required"
@@ -193,29 +361,25 @@ const Contact = (props) => {
                         <div className="help-block with-errors" />
                       </div>
                       <div
-                      className="col-md-12 mt-2"
-                      style={{ textAlign: "center" }}
-                    >
-                      <input
-                        type="submit"
-                        className="btn btn-light btn-send"
-                        defaultValue="Send message"
-                      />
-                    </div>
+                        className="col-md-12 mt-2"
+                        style={{ textAlign: "center" }}
+                      >
+                        <input
+                          type="submit"
+                          className="btn btn-light btn-send"
+                          defaultValue="Send message"
+                        />
+                      </div>
                     </div>
                   </div>
-                
                 </div>
               </form>
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
 
-// export default Contact;
-export default GoogleApiWrapper((props) => ({
-  apiKey: props.apiKey,
-}))(Contact);
+export default Contact;

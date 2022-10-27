@@ -1,7 +1,7 @@
 .navbar-bg {
   position: fixed !important;
   background: linear-gradient(to right, #ffffff 0%, #EADAD4 100%) !important;
-  /* background: linear-gradient(to right, #ffffff 0%, #0786C9 100%) !important; */
+
 
   background-position: fixed !important;
 }

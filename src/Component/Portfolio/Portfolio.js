@@ -44,7 +44,7 @@ const Portfolio = () => {
               <Box className="slide slide1">
                 <Box className="content">
                   <Box sx={{textAlign:"center"}}className="icon-port">
-                    <img src={cuffing}   height={200} width={200} />
+                    <img src={cuffing} className="img-size3"  height={200} width={200} />
                   </Box>
                 </Box>
               </Box>
@@ -52,7 +52,7 @@ const Portfolio = () => {
                 <Box className="content">
                   <Grid container>
                     <Grid md={8} xs={8}>
-                      <Typography className="title-port" variant="h5">
+                      <Typography className="title-portt" variant="h5">
                         Cuffing
                       </Typography>
                       <Typography className="para-port" variant="text">
@@ -87,7 +87,7 @@ const Portfolio = () => {
                 <Box className="content">
                 <Grid container>
                     <Grid md={8} xs={8}>
-                      <Typography className="title-port" variant="h5">
+                      <Typography className="title-portt" variant="h5">
                       Ebook Reader
                       </Typography>
                       <Typography className="para-port" variant="text">
@@ -124,7 +124,7 @@ const Portfolio = () => {
 
                 <Grid container>
                     <Grid md={8} xs={8}>
-                      <Typography className="title-port" variant="h5">
+                      <Typography className="title-portt" variant="h5">
                       iHomeCare
                       </Typography>
                       <Typography className="para-port" variant="text">
@@ -160,7 +160,7 @@ const Portfolio = () => {
                 <Box className="content">
                 <Grid container>
                     <Grid md={8} xs={8}>
-                      <Typography className="title-port" variant="h5">
+                      <Typography className="title-portt" variant="h5">
                       Island Traveller
                       </Typography>
                       <Typography className="para-port" variant="text">
@@ -196,7 +196,7 @@ const Portfolio = () => {
                 <Box className="content">
                 <Grid container>
                     <Grid md={8} xs={8}>
-                      <Typography className="title-port" variant="h5">
+                      <Typography className="title-portt" variant="h5">
                       Fluent8
                       </Typography>
                       <Typography className="para-port" variant="text">
@@ -232,7 +232,7 @@ const Portfolio = () => {
                 <Box className="content">
                 <Grid container>
                     <Grid md={8} xs={8}>
-                    <Typography className="title-port" variant="h5">
+                    <Typography className="title-portt" variant="h5">
                     Autism Therapy
                   </Typography>
                   <Typography className="para-port" variant="text">

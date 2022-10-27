@@ -10,8 +10,13 @@ const Testimonials = () => {
   return (
     <>
       <Box>
-        <Grid  container>
-          <Grid className="testimonial-center" md={12} sx={{ p: "10%" }} xs={12}>
+        <Grid container  className="testimonial-center">
+          <Grid
+           
+            md={12}
+            sx={{ p: "15%"}}
+            xs={12}
+          >
             <Box className="testimonial_slider_2 testi">
               <Box className="testi2">
                 <input
@@ -21,15 +26,14 @@ const Testimonials = () => {
                   defaultChecked
                 />
                 <input type="radio" name="slider_2" id="slide_2_2" />
-                {/* <input type="radio" name="slider_2" id="slide_2_3" />
-        <input type="radio" name="slider_2" id="slide_2_4" /> */}
+          
                 <Box className="boo_inner clearfix">
                   <Box className="slide_content">
                     <Box className="testimonial_2">
                       <Grid container>
-                        <Grid md={4}></Grid>
+                        <Grid md={3}></Grid>
                         <Grid
-                          sx={{ textAlign: "center", justifyContent: "center" }}
+                          sx={{ textAlign: "center", justifyContent: "center",pt:"9%", }}
                           md={4}
                           xs={12}
                         >
@@ -52,44 +56,40 @@ const Testimonials = () => {
 
                       <Box className="content_2 testimonial">
                         <Grid container>
-                          
-                          <Grid md={12} xs={12}>
-                          {/* <Box sx={{textAlign:"start",}}>    <span style={{fontSize:"20px",mt:"5%"}}>“</span></Box> */}
-                      
-                          <Box>
-                          <Typography
-                              variant="text"
-                              className="para-testi testimonial"
-                            >
-                             
-                             “ Your work is going to fill a large part of your
-                                life, and the only way to be truly satisfied is
-                                to do what you believe is great work. And the
-                                only way to do great work is to love what you
-                                do. ” 
-                              
-                            </Typography>
-                          </Box>
-                          {/* <Box sx={{textAlign:"end"}}>   <span style={{fontSize:"20px",}}>”</span></Box> */}
-                     
+                        <Grid md={3} xs={12}></Grid>
+                          <Grid md={6} xs={12}>
+
+                            <Box>
+                              <Typography
+                                variant="text"
+                                className="para-testi testimonial"
+                              >
+                                “ Your work is going to fill a large part of
+                                your life, and the only way to be truly
+                                satisfied is to do what you believe is great
+                                work. And the only way to do great work is to
+                                love what you do. ”
+                              </Typography>
+                            </Box>
+                            {/* <Box sx={{textAlign:"end"}}>   <span style={{fontSize:"20px",}}>”</span></Box> */}
                           </Grid>
                         </Grid>
                       </Box>
-                      
+
                       <Box className="author_2">
                         <Typography variant="h3" className="heading-testi">
-                         -- Lokesh Panchal -- 
+                          -- Lokesh Panchal --
                         </Typography>
-                        <span className="subheding" >Ceo & Founder</span>
+                        <span className="subheding">Ceo & Founder</span>
                       </Box>
                     </Box>
                   </Box>
                   <Box className="slide_content">
                     <Box className="testimonial_2">
                       <Grid container>
-                        <Grid md={4}></Grid>
+                        <Grid md={3}></Grid>
                         <Grid
-                          sx={{ textAlign: "center", justifyContent: "center" }}
+                          sx={{ textAlign: "center", justifyContent: "center",pt:"9%" }}
                           xs={12}
                           md={4}
                         >
@@ -108,35 +108,32 @@ const Testimonials = () => {
                         </Grid>
                         <Grid md={4}></Grid>
                       </Grid>
-                 
+
                       <Box className="content_2">
                         <Grid container>
-                         
-                          <Grid md={12} xs={12}>
+                        <Grid md={3} xs={12}></Grid>
 
-                            {/* <Box sx={{textAlign:"start"}}> <span style={{fontSize:"50px",}}>“</span></Box> */}
-                         
-                          <Box>
-                            <Typography
-                              variant="text"
-                              className="para-testi testimonial"
-                            >
-                                                  
-                              “ You don’t need to be a genius or a visionary,
+                          <Grid md={6} xs={12}>
+
+                            <Box>
+                              <Typography
+                                variant="text"
+                                className="para-testi testimonial"
+                              >
+                                “ You don’t need to be a genius or a visionary,
                                 or even a college graduate for that matter, to
                                 be successful. You just need framework and a
                                 dream. ”
-                             
-                            </Typography>
+                              </Typography>
                             </Box>
-                          {/* <Box sx={{textAlign:"end"}}>     <span style={{fontSize:"50px",}}>”</span></Box> */}
-                     
                           </Grid>
                         </Grid>
                       </Box>
                       <Box className="author_2">
-                        <Typography variant="h3"  className="heading-testi">-- Sweta Panchal --  </Typography>
-                        <span className="subheding"  >HR</span>
+                        <Typography variant="h3" className="heading-testi">
+                          -- Sweta Panchal --
+                        </Typography>
+                        <span className="subheding">HR</span>
                       </Box>
                     </Box>
                   </Box>

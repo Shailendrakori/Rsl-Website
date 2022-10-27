@@ -31,13 +31,11 @@ const About = () => {
             </Typography>
           </Grid>
         </Grid>
-        <Grid container  sx={{ mt: "5%" }}>
-          <Grid md={6} xs={12}  className="about-img-content">
-            <Card className="aboutbg" sx={{ textAlign: "center",p: "3%" }}>
+        <Grid container   sx={{ mt: "5%" }}>
+          <Grid md={6} xs={12}  className="about-img-content bg-ab">
            
-            </Card>
           </Grid>
-          <Grid md={6} xs={12}>
+          <Grid md={6} xs={12} sx={{background:"white"}}>
             <Box sx={{ p: "3%" }}>
               <Typography
                 variant="h5"

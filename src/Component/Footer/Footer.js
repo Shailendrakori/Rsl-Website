@@ -42,6 +42,7 @@ const Footer = () => {
     <>
       <CssBaseline />
       <Box className="allfooter">
+      
       <Box>
         <Box className="footer">
           <Grid container>
@@ -191,23 +192,27 @@ const Footer = () => {
 
          
           </Grid>
-        </Box>
-      </Box>
-
-      <Box>
-        <Box  className="afterfooter">
+          <Box sx={{pb:"2%",pt:"2%"}} >
+        <Box  className="afterfooter" >
         <Grid container>
-          <Grid md={6} sx={{textAlign:"center",pt:"10px"}} xs={12} >
+          <Grid md={6}className="webkit-footer" xs={12} >
             <Typography variant="text"  sx={paraAddress}>
               © Copyright RSL Soft Tech Pvt.Ltd.. All Rights Reserved
             </Typography>
           </Grid>
-          <Grid md={6} sx={{textAlign:"center",pt:"10px"}} xs={12}>
-            Designed by RSL Soft Tech Pvt.Ltd.
+          <Grid md={6} className="webkit-footer" xs={12}>
+          <Typography variant="text"  sx={paraAddress}>
+          Designed by RSL Soft Tech Pvt.Ltd.
+
+            </Typography>
           </Grid>
         </Grid>
         </Box>
       </Box>
+        </Box>
+      </Box>
+      
+      
       </Box>
     </>
   );
