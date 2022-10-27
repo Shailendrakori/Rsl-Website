@@ -1,3 +1,16 @@
+
+.heading-contact{
+  
+  font-size: 24px !important;
+  color: black !important ;
+  text-align: center !important ;
+  font-weight: 700 !important;
+  color: #181818 !important;
+  text-shadow: 0px 2px 2px #a6f8d5 !important;
+
+
+
+}
 #overflowTest {
     background: #4CAF50;
     color: white;
@@ -12,7 +25,7 @@
   .address-contact{
     text-align: -webkit-center;
   }
-.ico{
+.ico-contact{
   background-color: rgb(0, 0, 0);
 
     font-size: 18px;
@@ -28,7 +41,7 @@
   box-shadow: 2px 0px 5px;
 
 }
-.card{
+.card-contact{
   box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
   border-radius: 0px !important;
  
@@ -37,7 +50,7 @@
 
 
 
-.btn{
+.btn-contact{
   color: white;
   background-color: rgb(0, 0, 0);
   text-transform: uppercase;
@@ -55,45 +68,21 @@
   padding: 0.84rem 2.14rem;
   font-size: .81rem;
 }
-.waves-effect {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-tap-highlight-color: transparent;
-}
+
 
 
 
 .map{
   box-shadow: 0 5px 11px 0 rgb(0 0 0 / 18%), 0 4px 15px 0 rgb(0 0 0 / 15%);
 }
-.input-form{
+.input-form-contact{
   border-radius: 0px;
   border: none !important;
   border-bottom: 1px solid rgb(112,121,129) !important;
-  margin-top: 5%;
+  margin-top: 10%;
+  width: 80%;
  
 }
 
-.icon-right-form-contact{
- text-align: -webkit-right;
-}
-
-
-
-.iconf-contact{
-  position: absolute;
-  margin: 10px 0 0px -277px;
-
-    font-size: 18px;
- 
-    color: rgb(0, 0, 0);
-    border-radius: 100%;
-   
-}
 
 

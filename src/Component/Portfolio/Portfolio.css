@@ -1,4 +1,17 @@
 
+
+.heading-portfolio{
+  
+  font-size: 24px !important;
+  color: black !important ;
+  text-align: center !important ;
+  font-weight: 700 !important;
+  color: #181818 !important;
+  text-shadow: 0px 2px 2px #a6f8d5 !important;
+
+
+
+}
 .img-size3{
     
     height: 100px;

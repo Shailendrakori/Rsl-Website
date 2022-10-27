@@ -18,7 +18,7 @@ const Portfolio = () => {
           <Grid md={12} sx={{ marginTop: "1%" }} xs={12}>
             <Typography
               variant="h4"
-              className="heading-all"
+              className="heading-portfolio"
               sx={{ color: "black", textAlign: "center" }}
             >
               Our Portfolio

@@ -15,7 +15,7 @@ const About = () => {
           <Grid md={12} sx={{ marginTop: "1%" }} xs={12}>
             <Typography
               variant="h4"
-              className="heading-all"
+              className="heading-about"
               sx={{  textAlign: "center" }}
             >
               Find Out More About Us

@@ -33,7 +33,7 @@ const Contact = (props) => {
         <Grid container>
           <Grid md={12} sx={{ marginTop: "1%" }} xs={12}>
             <Typography
-              className="heading-all"
+              className="heading-contact"
               variant="h5"
               sx={{ color: "black", textAlign: "center" }}
             >
@@ -55,9 +55,9 @@ const Contact = (props) => {
       </Box>
 
       <div className="container mb-5">
-        <div className="row card">
-      
-          <div className="col-md-12 col-xs-6">
+        <div className="row ">
+        <div className="col-md-1 col-xs-10">  </div>
+          <div className="col-md-10 col-xs-10 card-contact ">
             <div className="row">
               <div className="col-md-8 col-xs-12">
                 <div
@@ -79,22 +79,22 @@ const Contact = (props) => {
                 
             <div className="row pt-4">
               <div className="col-md-4  col-xs-12 address-contact ">
-                <div classname="card p-5  card-address">
-                  <i class="bi bi-geo-alt ico"></i>
+                <div classname="card-contact p-5  card-address">
+                  <i class="bi bi-geo-alt ico-contact"></i>
                   <h4 style={{ paddingTop: "4%" }}>Our Address</h4>
                   <p>114,115 Milinda Manor RNT Marg Indore (MP), India</p>
                 </div>
               </div>
               <div className="col-md-4 col-xs-12 address-contact ">
-                <div classname="card p-3  card-address">
-                  <i class="bi bi-envelope ico"></i>
+                <div classname="card-contact p-3  card-address">
+                  <i class="bi bi-envelope ico-contact"></i>
                   <h4 style={{ paddingTop: "4%" }}>Email Us</h4>
                   <p>contact@rslsofttech.com</p>
                 </div>
               </div>
               <div className="col-md-4 col-xs-12 address-contact ">
-                <div classname="card p-3 card-address ">
-                  <i class="bi bi-telephone-fill ico"></i>
+                <div classname="card-contact p-3 card-address ">
+                  <i class="bi bi-telephone-fill ico-contact"></i>
                   <h4 style={{ paddingTop: "4%" }}>Call Us</h4>
                   <p>+918839087102</p>
                 </div>
@@ -102,10 +102,10 @@ const Contact = (props) => {
             </div>
               </div>
               <div
-                className="card col-md-4 col-xs-12"
+                className="card-contact col-md-4 col-xs-12"
                 style={{ textAlign: "center" }}
               >
-                <div className=" p-5" >
+                <div className=" p-2" >
                   <form
                     id="contact-form"
                     method="post"
@@ -125,7 +125,7 @@ const Contact = (props) => {
                               id="form_name"
                               type="text"
                               name="name"
-                              className="form-control input-form"
+                              className=" input-form-contact"
                               placeholder="Your name"
                               required="required"
                               data-error="Fullname is required."
@@ -142,7 +142,7 @@ const Contact = (props) => {
                               id="form_email"
                               type="email"
                               name="email"
-                              className="form-control input-form"
+                              className=" input-form-contact"
                               placeholder="Your email"
                               required="required"
                               data-error="Valid email is required."
@@ -158,7 +158,7 @@ const Contact = (props) => {
                               id="form_phone"
                               type="number"
                               name="phone"
-                              className="form-control input-form"
+                              className="input-form-contact"
                               placeholder="Your phone number"
                             />
                             <div className="help-block with-errors" />
@@ -172,7 +172,7 @@ const Contact = (props) => {
                               id="form_lastname"
                               type="file"
                               name="surname"
-                              className="form-control input-form"
+                              className=" input-form-contact"
                               required="required"
                               data-error="Lastname is required."
                             />
@@ -186,7 +186,7 @@ const Contact = (props) => {
                             <textarea
                               id="form_message"
                               name="message"
-                              className="form-control input-form"
+                              className=" input-form-contact"
                               placeholder="Message for me *"
                               rows={4}
                               required="required"
@@ -201,7 +201,7 @@ const Contact = (props) => {
                           >
                             <input
                               type="submit"
-                              className="btn btn-light btn-send"
+                              className="btn-contact btn-light btn-send"
                               defaultValue="Send message"
                             />
                           </div>
@@ -306,7 +306,7 @@ const Contact = (props) => {
                           id="form_name"
                           type="text"
                           name="name"
-                          className="form-control input-form"
+                          className="form-control input-form-contact"
                           placeholder="Your name"
                           required="required"
                           data-error="Fullname is required."
@@ -319,7 +319,7 @@ const Contact = (props) => {
                           id="form_email"
                           type="email"
                           name="email"
-                          className="form-control input-form"
+                          className="form-control input-form-contact"
                           placeholder="Your email"
                           required="required"
                           data-error="Valid email is required."
@@ -331,7 +331,7 @@ const Contact = (props) => {
                           id="form_phone"
                           type="number"
                           name="phone"
-                          className="form-control input-form"
+                          className="form-control input-form-contact"
                           placeholder="Your phone number"
                         />
                         <div className="help-block with-errors" />
@@ -341,7 +341,7 @@ const Contact = (props) => {
                           id="form_lastname"
                           type="file"
                           name="surname"
-                          className="form-control input-form"
+                          className="form-control input-form-contact"
                           required="required"
                           data-error="Lastname is required."
                         />
@@ -351,7 +351,7 @@ const Contact = (props) => {
                         <textarea
                           id="form_message"
                           name="message"
-                          className="form-control input-form"
+                          className="form-control input-form-contact"
                           placeholder="Message for me *"
                           rows={4}
                           required="required"
