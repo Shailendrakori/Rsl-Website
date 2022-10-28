@@ -105,12 +105,7 @@ const Footer = () => {
                       Portfolio
                     </Link>
                   </ListItemText>
-                 
-                  <ListItemText>
-                    <Link className="afooter" to="/">
-                      Terms of uses
-                    </Link>
-                  </ListItemText>
+                                  
                   <ListItemText>
                     <Link className="afooter" to="contact">
                       Contact
@@ -126,32 +121,32 @@ const Footer = () => {
                 </Typography>
                 <List component="nav" aria-label="secondary mailbox folder">
                   <ListItemText>
-                    <Link className="afooter"  to="services">
+                    <Link className="afooter"  >
                       Android Development
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter"  to="services">
+                    <Link className="afooter"  >
                       IOS Development
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter"  to="services">
+                    <Link className="afooter"  >
                       Web Design
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="services">
+                    <Link className="afooter" >
                       Web Development
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter" to="/services">
+                    <Link className="afooter" >
                       Graphic Design
                     </Link>
                   </ListItemText>
                   <ListItemText>
-                    <Link className="afooter"  to="services">
+                    <Link className="afooter" >
                       QA Solurion
                     </Link>
                   </ListItemText>
@@ -197,7 +192,7 @@ const Footer = () => {
         <Grid container>
           <Grid md={6}className="webkit-footer" xs={12} >
             <Typography variant="text"  sx={paraAddress}>
-              © Copyright RSL Soft Tech Pvt.Ltd.. All Rights Reserved
+              © Copyright RSL Soft Tech Pvt.Ltd. All Rights Reserved
             </Typography>
           </Grid>
           <Grid md={6} className="webkit-footer" xs={12}>

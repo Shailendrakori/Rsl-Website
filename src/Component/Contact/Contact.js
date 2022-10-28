@@ -29,7 +29,7 @@ const Contact = (props) => {
 
   return (
     <>
-      <Box id="contact" sx={{ mb: "4%" }}>
+      <Box id="contact" sx={{ mb: "1%" }}>
         <Grid container>
           <Grid md={12} sx={{ marginTop: "1%" }} xs={12}>
             <Typography
@@ -44,7 +44,7 @@ const Contact = (props) => {
           <Grid md={3} xs={12}></Grid>
 
           <Grid md={6} xs={12}>
-            <Typography variant="text" sx={{ color: "black", margintop: "1%" }}>
+            <Typography variant="text" sx={{ color: "black", }}>
               <Box className="paragraph-all" sx={{ textAlign: "center" }}>
                 You are always welcome to contact us if you have questions or
                 need help or guidance.
@@ -81,21 +81,21 @@ const Contact = (props) => {
               <div className="col-md-4  col-xs-12 address-contact ">
                 <div classname="card-contact p-5  card-address">
                   <i class="bi bi-geo-alt ico-contact"></i>
-                  <h4 style={{ paddingTop: "4%" }}>Our Address</h4>
+                  <h4 style={{ paddingTop: "8%" }}>Our Address</h4>
                   <p>114,115 Milinda Manor RNT Marg Indore (MP), India</p>
                 </div>
               </div>
               <div className="col-md-4 col-xs-12 address-contact ">
                 <div classname="card-contact p-3  card-address">
                   <i class="bi bi-envelope ico-contact"></i>
-                  <h4 style={{ paddingTop: "4%" }}>Email Us</h4>
+                  <h4 style={{ paddingTop: "8%" }}>Email Us</h4>
                   <p>contact@rslsofttech.com</p>
                 </div>
               </div>
               <div className="col-md-4 col-xs-12 address-contact ">
                 <div classname="card-contact p-3 card-address ">
                   <i class="bi bi-telephone-fill ico-contact"></i>
-                  <h4 style={{ paddingTop: "4%" }}>Call Us</h4>
+                  <h4 style={{ paddingTop: "8%" }}>Call Us</h4>
                   <p>+918839087102</p>
                 </div>
               </div>

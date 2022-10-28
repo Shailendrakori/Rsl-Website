@@ -14,7 +14,7 @@ const Testimonials = () => {
           <Grid
            
             md={12}
-            sx={{ p: "15%"}}
+            sx={{ p: "10%"}}
             xs={12}
           >
             <Box className="testimonial_slider_2 testi">
@@ -31,27 +31,23 @@ const Testimonials = () => {
                   <Box className="slide_content">
                     <Box className="testimonial_2">
                       <Grid container>
-                        <Grid md={3}></Grid>
+                      <Grid md={3} xs={3}></Grid>
                         <Grid
-                          sx={{ textAlign: "center", justifyContent: "center",pt:"9%", }}
+                          sx={{pt:"9%", }}
                           md={4}
-                          xs={12}
+                          xs={6}
                         >
                           <Box
-                            sx={{
-                              textAlign: "center",
-                              justifyContent: "center",
-                            }}
+                           
                           >
                             <img
                               className="testi-profile"
                               src={lokeshsir}
-                              height={150}
-                              width={200}
+                              
                             />
                           </Box>
                         </Grid>
-                        <Grid md={4}></Grid>
+                       
                       </Grid>
 
                       <Box className="content_2 testimonial">
@@ -87,26 +83,26 @@ const Testimonials = () => {
                   <Box className="slide_content">
                     <Box className="testimonial_2">
                       <Grid container>
-                        <Grid md={3}></Grid>
+                      <Grid md={3} xs={3}></Grid>
+                        
                         <Grid
                           sx={{ textAlign: "center", justifyContent: "center",pt:"9%" }}
-                          xs={12}
                           md={4}
+                          xs={6}
                         >
                           <Box
                             sx={{
-                              textAlign: "center",
-                              justifyContent: "center",
+                             
                             }}
                           >
                             <img
                               className="testi-profile"
                               src={hr}
-                              height={150}
+                              
                             />
                           </Box>
                         </Grid>
-                        <Grid md={4}></Grid>
+                      
                       </Grid>
 
                       <Box className="content_2">
