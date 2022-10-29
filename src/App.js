@@ -9,12 +9,7 @@ import Portfolio from "./Component/Portfolio/Portfolio";
 import Contact from "./Component/Contact/Contact";
 import "../src/Style.css";
 import Testimonials from "./Component/Testimonials/Testimonials";
-// import Box from "@mui/material/Box";
-// import Fab from "@mui/material/Fab";
-// import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-// import Fade from "@mui/material/Fade";
-// import PropTypes from "prop-types";
-// import useScrollTrigger from "@mui/material/useScrollTrigger";
+// import ContactForm from "../src/Component/Api"
 
 
 function App() {
@@ -28,7 +23,7 @@ function App() {
       <Testimonials />
       <Contact />
       <Footer />
-      
+      {/* <ContactForm/> */}
  
   
 
